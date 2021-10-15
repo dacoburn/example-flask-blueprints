@@ -3,11 +3,13 @@
         <title>Example Page</title>
     </head>
     <body>
+    <!-- When using the Flask templates that are based on jinja we can access variables using the double curly brace -->
     <p>Hello {{ username }}</p>
     <br>
     This page also has a redirect to another route:
     <ul>
-        <li><a href="/{{ username }}">Example Page</a></li>
+        <!-- url_for allows you to call the route without having to hard code a path. It supports passing arguments like below -->
+        <li><a href="{{ url_for('example.example', username=username) }}">Example Page</a></li>
     </ul>
     </body>
 </html>

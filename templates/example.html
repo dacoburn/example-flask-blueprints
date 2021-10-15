@@ -3,6 +3,7 @@
         <title>Example Page 2</title>
     </head>
     <body>
+    <!-- When using the Flask templates that are based on jinja we can access variables using the double curly brace -->
     <p>Hello {{ username }}</p>
     <br>
     Here is the random argument: {{ arg }}
@@ -10,6 +11,7 @@
     <br>
     This page also has a link to the main page:
     <ul>
+        <!-- url_for allows you to call the route without having to hard code a path. It supports passing arguments like below -->
         <li><a href="{{ url_for('index.index') }}">Index Page</a></li>
     </ul>
     </body>
