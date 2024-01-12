@@ -20,3 +20,4 @@ if __name__ == '__main__':
     # I like to either get the port from an env variable or use the default
     port = int(os.environ.get('APP_PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+
