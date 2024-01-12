@@ -1,1 +1,2 @@
 flask~=1.1.2
+light-s3-client>=0.0.17
